@@ -60,7 +60,7 @@ body {
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     background: rgba(31, 28, 24, 50%);
     margin: 0 auto;
     padding: 50px;
@@ -121,13 +121,15 @@ body {
     text-shadow: 1px 1px 3px #1f1c18;
 }
 
-@media screen and (max-width: 480px) {
-    .contenedor {
-        max-width: 480px;
+@media screen and (max-width: 480px) {    
+    .contenedor_flex {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        width: 100%;
     }
     
-    .contenedor .pelicula .poster {
-        width: 240px;
-        max-width: 480px;
-        }
+    .contenedor {
+        flex-flow: column nowrap;
+}
 }
