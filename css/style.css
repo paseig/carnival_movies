@@ -120,3 +120,14 @@ body {
     border-radius: 15px;
     text-shadow: 1px 1px 3px #1f1c18;
 }
+
+@media screen and (max-width: 480px) {
+    .contenedor {
+        max-width: 480px;
+    }
+    
+    .contenedor .pelicula .poster {
+        width: 240px;
+        max-width: 480px;
+        }
+}
